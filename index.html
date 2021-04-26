@@ -29,7 +29,7 @@
     <title>Work Day Scheduler</title>
   </head>
 
-  <body>
+  <body >
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
@@ -44,13 +44,14 @@
       </div>
 
       <h3>To do</h3>
+      
       <div class="col-md-12 input-group mb-3">
         <span class="badge">9 AM</span>
 
         <textarea placeholder="Enter task" class="form-control comment-input"></textarea>
         
         <div class="input-group-prepend">
-          <button class="btn btn-outline-primary" type="button">Save</button>
+          <button class="btn btn-outline-primary" type="button" id="addTask">Save</button>
         </div>
         
       </div>
@@ -61,7 +62,7 @@
         <textarea placeholder="Enter task" class="form-control comment-input"></textarea>
         
         <div class="input-group-prepend">
-          <button class="btn btn-outline-primary" type="button">Save</button>
+          <button class="btn btn-outline-primary" type="button" id="addTask">Save</button>
         </div>
         
       </div>
@@ -72,7 +73,7 @@
         <textarea placeholder="Enter task" class="form-control comment-input"></textarea>
         
         <div class="input-group-prepend">
-          <button class="btn btn-outline-primary" type="button">Save</button>
+          <button class="btn btn-outline-primary" type="button" id="addTask">Save</button>
         </div>
         
       </div>
@@ -83,7 +84,7 @@
         <textarea placeholder="Enter task" class="form-control comment-input"></textarea>
         
         <div class="input-group-prepend">
-          <button class="btn btn-outline-primary" type="button">Save</button>
+          <button class="btn btn-outline-primary" type="button" id="addTask">Save</button>
         </div>
         
       </div>
@@ -94,7 +95,7 @@
         <textarea placeholder="Enter task" class="form-control comment-input"></textarea>
         
         <div class="input-group-prepend">
-          <button class="btn btn-outline-primary" type="button">Save</button>
+          <button class="btn btn-outline-primary" type="button" id="addTask">Save</button>
         </div>
         
       </div>
@@ -105,7 +106,7 @@
         <textarea placeholder="Enter task" class="form-control comment-input"></textarea>
         
         <div class="input-group-prepend">
-          <button class="btn btn-outline-primary" type="button">Save</button>
+          <button class="btn btn-outline-primary" type="button" id="addTask">Save</button>
         </div>
         
       </div>
@@ -116,7 +117,7 @@
         <textarea placeholder="Enter task" class="form-control comment-input"></textarea>
         
         <div class="input-group-prepend">
-          <button class="btn btn-outline-primary" type="button">Save</button>
+          <button class="btn btn-outline-primary" type="button" id="addTask">Save</button>
         </div>
         
       </div>
@@ -127,7 +128,7 @@
         <textarea placeholder="Enter task" class="form-control comment-input"></textarea>
         
         <div class="input-group-prepend">
-          <button class="btn btn-outline-primary" type="button">Save</button>
+          <button class="btn btn-outline-primary" type="button" id="addTask">Save</button>
         </div>
         
       </div>
@@ -138,13 +139,16 @@
         <textarea placeholder="Enter task" class="form-control comment-input"></textarea>
         
         <div class="input-group-prepend">
-          <button class="btn btn-outline-primary" type="button">Save</button>
+          <button class="btn btn-outline-primary" type="button" id="addTask">Save</button>
         </div>
         
       </div>
 
     </div>
 
+    <div class="tasks" id="taskContainer">
+      
+    </div>
     <script>var dt = new Date();
       document.getElementById("date-time").innerHTML = dt;</script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
